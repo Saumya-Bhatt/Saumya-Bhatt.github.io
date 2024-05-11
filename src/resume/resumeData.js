@@ -53,7 +53,7 @@ export const resumeData = {
             title: 'Software Engineer I',
             summary: 'Worked on building the Payments micro-service. Currently working with Data Science team to build a Model Serving and Feature Computation Platform to power ML use-cases.',
             description: [
-                "Built various use-cases in the payments microservice which currently processes ~1.5 Lakh transactions in a month with an uptime of 99.5%",
+                "Built the payments microservice which currently processes ~1.5 Lakh transactions in a month with an uptime of 99.5%",
                 "Built dynamic switching between different Payment Gateways based on Customer Profile to ensure higher success rate.",
                 "Built the model serving platform that powers the matchmaking service by ranking drivers based on 100 different features.",
                 "Building the feature computation layer on top of Apache Kafka and Spark that manages offline and online features of drivers."
