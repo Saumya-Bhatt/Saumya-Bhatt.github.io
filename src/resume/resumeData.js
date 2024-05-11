@@ -3,6 +3,7 @@ import java from '../images/skills/languages/java.png';
 import javascript from '../images/skills/languages/javascript.png';
 import python from '../images/skills/languages/python.png';
 import cpluspluss from '../images/skills/languages/c++.png';
+import golang from '../images/skills/languages/golang.png';
 
 import nodejs from '../images/skills/framework/node-js.png';
 import express from '../images/skills/framework/express.png';
@@ -27,6 +28,7 @@ import aws from '../images/skills/tools/aws.png';
 import terraform from '../images/skills/tools/terraform.png';
 import docker from '../images/skills/tools/docker.png';
 import githubTool from '../images/skills/tools/github.png';
+import kafka from '../images/skills/tools/kafka.png';
 
 import placements from '../images/resources/placements.jpg';
 import dsa from '../images/resources/dsa.png';
@@ -44,17 +46,17 @@ import medium from '../images/icons/medium.png'
 export const resumeData = {
     "experience": [
         {
-            company: 'Porter Logistics',
+            company: 'Porter',
             link: 'https://porter.in/',
             location: 'Bengaluru, Karnataka',
             duration: 'July 2022 - Present',
-            title: 'Software Engineer 1',
-            summary: 'Working with the payments platforms team to build various financial tools used across the orginization.',
+            title: 'Software Engineer I',
+            summary: 'Worked on building the Payments micro-service. Currently working with Data Science team to build a Model Serving and Feature Computation Platform to power ML use-cases.',
             description: [
-                "Built various use-cases in the payments microservice, adhering to SOLID design patterns, which currently processes 1 Lakh transactions in a month.",
-                "Built routing logic such as switching between different PGs based on region and customer pattern in real time.",
-                "Managed to bring the uptime of the said microservice from ~80% to 99%.",
-                "Built retry and fallback logic into the service to bring the payment success rate from 64% to 84%."
+                "Built various use-cases in the payments microservice which currently processes ~1.5 Lakh transactions in a month with an uptime of 99.5%",
+                "Built dynamic switching between different Payment Gateways based on Customer Profile to ensure higher success rate.",
+                "Built the model serving platform that powers the matchmaking service by ranking drivers based on 100 different features.",
+                "Building the feature computation layer on top of Apache Kafka and Spark that manages offline and online features of drivers."
             ]
         },
         {
@@ -62,11 +64,12 @@ export const resumeData = {
             link: 'https://www.nucleussoftware.com/',
             location: 'Noida, UP',
             duration: 'June 2021 - December 2021',
-            title: 'Software Engineering Intern',
-            summary: 'Worked with the B2B facing team called FinnAxia for classifying their customer base',
+            title: 'Software Engineer Intern',
+            summary: 'Worked with the B2B facing team FinnAxia for building an end-to-end solution to classify their customer base.',
             description: [
                 "Developed a customer classification and visualization dashboard for banks to gain insights from.",
-                "Built a three-way system which included a K-means clustering algorithm to classify dataset, Spring Boot based web-server to relay that data to a frontend built in ReactJS."
+                "Built a three-way system which included a K-means clustering algorithm to classify dataset, Spring Boot based web-server that exposes a REST interface for the frontend built using ReactJS.",
+                "The dashboard built helped the business unit perform RFM (Recency, Frequency, Monetary) analysis on their user-base to gain further insights."
             ]
         },
         {
@@ -74,20 +77,26 @@ export const resumeData = {
             link: 'https://github.com/Saumya-Bhatt/NIO-Dashboard',
             location: 'Panjim, Goa',
             duration: 'August 2020 - October 2020',
-            title: 'Summer Intern',
-            summary: 'Worked with the Marine Scoping team to built a communication channel with their bot',
+            title: 'Software Engineer Intern',
+            summary: 'Worked with the Marine Scoping team and built a service to communicate with their robot in near realtime.',
             description: [
                 ' Created a web-based dashboard to manage and communicate with 25 marine robots in real-time.',
                 "Included ability to track location and stream camera feed in near-real time using OpenCV, WebSockets and RTSP Protocols.",
-                "Involved in using concepts of rasterization to generate live offline mapping using images"
+                "Involved in using concepts of rasterization to generate live offline mapping using images."
             ]
         }
     ],
     "projects": [
         {
+            name: 'ClickStream Simulator 1.0',
+            tech: 'Kafka, Redis, Rabbit-MQ',
+            description: 'End to end application to stream click events from a React-based webapp to a python consumer that triggers an email on suspicious activity in near-real-time using Kafka.',
+            link: 'https://github.com/Event-Streaming-Example'
+        },
+        {
             name: 'Movies-By-the-Sea',
             tech: 'Flask, React',
-            description: 'Created backend, frontend and role based REST API with custom authentication for personal movie review blog.',
+            description: 'Created backend, frontend, CRM and a public REST API with RBAC for personal movie review blog.',
             link: 'https://github.com/Movies-By-the-Sea'
         },
         {
@@ -99,7 +108,7 @@ export const resumeData = {
         {
             name: 'Chat-Room',
             tech: 'Ajax, MySQL',
-            description: 'Near-Real time updating multi-user chat room which could be hosted locally on an apache Server.',
+            description: 'Near-Real time multi-user chat room running locally on an Apache server using web-sockets.',
             link: 'https://github.com/Saumya-Bhatt/Chat-Room'
         }
     ],
@@ -126,6 +135,11 @@ export const resumeData = {
                     name: "Javascript",
                     img: javascript,
                     link: "https://developer.mozilla.org/en-US/docs/Web/javascript"
+                },
+                {
+                    name: "Golang",
+                    img: golang,
+                    link: "https://go.dev/"
                 },
                 {
                     name: "C++",
@@ -183,6 +197,11 @@ export const resumeData = {
                     link: "https://www.postgresql.org/"
                 },
                 {
+                    name: "Redis",
+                    img: redis,
+                    link: "https://redis.io/"
+                },
+                {
                     name: 'MongoDB',
                     img: mongodb,
                     link: 'https://www.mongodb.com/'
@@ -191,11 +210,6 @@ export const resumeData = {
                     name: 'MySQL',
                     img: mysql,
                     link: 'https://www.mysql.com/'
-                },
-                {
-                    name: "Redis",
-                    img: redis,
-                    link: "https://redis.io/"
                 },
                 {
                     name: 'Elastic Search',
@@ -213,14 +227,14 @@ export const resumeData = {
                     link: "https://aws.amazon.com/"
                 },
                 {
-                    name: "Terraform",
-                    img: terraform,
-                    link: "https://www.terraform.io/"
-                },
-                {
                     name: "Docker",
                     img: docker,
                     link: "https://www.docker.com/"
+                },
+                {
+                    name: "Kafka",
+                    img: kafka,
+                    link: "https://kafka.apache.org/"
                 },
                 {
                     name: 'Firebase',
@@ -236,6 +250,11 @@ export const resumeData = {
                     name: "Github",
                     img: githubTool,
                     link: "https://github.com/"
+                },
+                {
+                    name: "Terraform",
+                    img: terraform,
+                    link: "https://www.terraform.io/"
                 }
             ]
         }
@@ -244,7 +263,7 @@ export const resumeData = {
         {
             name: 'DSA Question Bank',
             link: 'https://saumya-bhatt.notion.site/91fd63c86ffc405f9dd16256e6cc3d56?v=9753b961f83c4ef1bb3a88fe1f36d4d1',
-            description: '100 DSA questions of all topics important for placements with solutions',
+            description: '100 plus DSA questions of all topics important for placements with solutions',
             img: placements
         },
         {
