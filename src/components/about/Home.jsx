@@ -14,7 +14,7 @@ export default function Home(props) {
         <a
           rel="noreferrer"
           target="_blank"
-          href="http://mbts.studio"
+          href="http://movies-by-the-sea.github.io"
           className="main-mbts"
         >
           Movies By The Sea.
