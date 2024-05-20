@@ -53,9 +53,9 @@ export const resumeData = {
             title: 'Software Engineer I',
             summary: 'Worked on building the Payments micro-service. Currently working with Data Science team to build a Model Serving and Feature Computation Platform to power ML use-cases.',
             description: [
-                "Built the payments microservice which currently processes ~1.5 Lakh transactions in a month with an uptime of 99.5%",
-                "Built dynamic switching between different Payment Gateways based on Customer Profile to ensure higher success rate.",
-                "Built the model serving platform that powers the matchmaking service by ranking drivers based on 100 different features.",
+                "Built the payments microservice in Kotlin which currently processes 82% of all online transactions at the Porter with an uptime of 99.5%",
+                "Implemented dynamic switching between different Payment Gateways based on User Profile and region to improve payment success rate from 74% to 87%.",
+                "Built the model serving platform that powers the matchmaking service by ranking drivers based on 100 different features with a p95 latency of 250ms and handles 2-3 Lakh requests per day.",
                 "Building the feature computation layer on top of Apache Kafka and Spark that manages offline and online features of drivers."
             ]
         },
@@ -67,8 +67,8 @@ export const resumeData = {
             title: 'Software Engineer Intern',
             summary: 'Worked with the B2B facing team FinnAxia for building an end-to-end solution to classify their customer base.',
             description: [
-                "Developed a customer classification and visualization dashboard for banks to gain insights from.",
-                "Built a three-way system which included a K-means clustering algorithm to classify dataset, Spring Boot based web-server that exposes a REST interface for the frontend built using ReactJS.",
+                "Developed a customer classification and visualization dashboard for banks to perform RFM analysis on their user-base and classify them into 5 relevant segments.",
+                "Wrote a Machine Learning model that used K-means clustering algorithm and trained on 1 lakh entries, served by a Spring-Boot based server to the ReactJS based frontend as a REST interface.",
                 "The dashboard built helped the business unit perform RFM (Recency, Frequency, Monetary) analysis on their user-base to gain further insights."
             ]
         },
@@ -80,9 +80,9 @@ export const resumeData = {
             title: 'Software Engineer Intern',
             summary: 'Worked with the Marine Scoping team and built a service to communicate with their robot in near realtime.',
             description: [
-                ' Created a web-based dashboard to manage and communicate with 25 marine robots in real-time.',
+                'Created a web-based dashboard in Python to manage and communicate with 25 marine robots in real-time.',
                 "Included ability to track location and stream camera feed in near-real time using OpenCV, WebSockets and RTSP Protocols.",
-                "Involved in using concepts of rasterization to generate live offline mapping using images."
+                "Devised ability to track localtion using concepts of image rasterization with a lag of 5 seconds."
             ]
         }
     ],
@@ -90,13 +90,13 @@ export const resumeData = {
         {
             name: 'ClickStream Simulator 1.0',
             tech: 'Kafka, Redis, Rabbit-MQ',
-            description: 'End to end application to stream click events from a React-based webapp to a python consumer that triggers an email on suspicious activity in near-real-time using Kafka.',
+            description: 'End to end application to stream click events from a React-based webapp to a python consumer that triggers an email on suspicious activity in near-real-time (with a lag of 1 second) using Kafka.',
             link: 'https://github.com/Event-Streaming-Example'
         },
         {
             name: 'Movies-By-the-Sea',
             tech: 'Flask, React',
-            description: 'Created backend, frontend, CRM and a public REST API with RBAC for personal movie review blog.',
+            description: 'Created backend, frontend, CRM and a public REST API (with a latency of 300 ms) with role-based-access using JWT tokens for personal movie review blog.',
             link: 'https://github.com/Movies-By-the-Sea'
         },
         {
