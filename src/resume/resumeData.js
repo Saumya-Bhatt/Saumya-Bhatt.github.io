@@ -46,7 +46,7 @@ import medium from '../images/icons/medium.png'
 export const resumeData = {
     "experience": [
         {
-            company: 'Porter',
+            company: 'Porter (SE2)',
             link: 'https://porter.in/',
             location: 'Bengaluru, Karnataka',
             duration: 'June 2024 - Present',
@@ -59,7 +59,7 @@ export const resumeData = {
             ]
         },
         {
-            company: 'Porter',
+            company: 'Porter (SE1)',
             link: 'https://porter.in/',
             location: 'Bengaluru, Karnataka',
             duration: 'July 2022 - June 2024',
@@ -99,6 +99,12 @@ export const resumeData = {
         }
     ],
     "projects": [
+        {
+            name: 'Karya',
+            tech: 'Kotlin, Postgres, Redis, RabbitMQ',
+            description: 'An open-source distributed Task Scheduler designed for high-throughput job scheduling with support for periodic, delayed, and custom workflows. Integrates seamlessly into diverse tech stacks via YAML configuration, offering plug-and-play simplicity. Built for infinite scalability and robustness with a proven architecture. Multi-language client support ensures easy integration with any product.',
+            link: 'https://github.com/Saumya-Bhatt/karya'
+        },
         {
             name: 'ClickStream Simulator 1.0',
             tech: 'Kafka, Redis, Rabbit-MQ',
