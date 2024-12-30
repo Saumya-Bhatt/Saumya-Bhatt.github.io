@@ -49,14 +49,26 @@ export const resumeData = {
             company: 'Porter',
             link: 'https://porter.in/',
             location: 'Bengaluru, Karnataka',
-            duration: 'July 2022 - Present',
+            duration: 'June 2024 - Present',
+            title: 'Software Engineer II',
+            summary: 'Part of the Decisions Systems team to create Machine Learning platform for Data Scientists to launch, iterate and monitor the performance of their Machine Learning models.',
+            description: [
+                "Built the model serving platform that powers the matchmaking service by ranking drivers based on 100 different features with a p95 latency of 250ms and handles 2-3 Lakh requests per day.",
+                "Worked on setting up the framework for Data Scientists to define features for offline and online queries using a python-based DSL. This brought down TAT of deploying ML models from 1.5 month to 2 weeks",
+                "Part of the squad to migrate the services at Porter from AWS to GCP which helped cut infra cost by 30%"
+            ]
+        },
+        {
+            company: 'Porter',
+            link: 'https://porter.in/',
+            location: 'Bengaluru, Karnataka',
+            duration: 'July 2022 - June 2024',
             title: 'Software Engineer I',
-            summary: 'Worked on building the Payments micro-service. Currently working with Data Science team to build a Model Serving and Feature Computation Platform to power ML use-cases.',
+            summary: 'Worked on building the Payments micro-service from scratch',
             description: [
                 "Built the payments microservice in Kotlin which currently processes 82% of all online transactions at the Porter with an uptime of 99.5%",
                 "Implemented dynamic switching between different Payment Gateways based on User Profile and region to improve payment success rate from 74% to 87%.",
-                "Built the model serving platform that powers the matchmaking service by ranking drivers based on 100 different features with a p95 latency of 250ms and handles 2-3 Lakh requests per day.",
-                "Building the feature computation layer on top of Apache Kafka and Spark that manages offline and online features of drivers."
+                "Built the model serving platform that powers the matchmaking service by ranking drivers based on 100 different features with a p95 latency of 250ms and handles 2-3 Lakh requests per day."
             ]
         },
         {
