@@ -5,6 +5,7 @@ import python from '../images/skills/languages/python.png';
 import cpluspluss from '../images/skills/languages/c++.png';
 import golang from '../images/skills/languages/golang.png';
 
+import fastapi from '../images/skills/framework/fastapi.png'
 import nodejs from '../images/skills/framework/node-js.png';
 import express from '../images/skills/framework/express.png';
 import django from '../images/skills/framework/django.png';
@@ -29,6 +30,8 @@ import terraform from '../images/skills/tools/terraform.png';
 import docker from '../images/skills/tools/docker.png';
 import githubTool from '../images/skills/tools/github.png';
 import kafka from '../images/skills/tools/kafka.png';
+import kubernetes from '../images/skills/tools/kubernetes.png'
+import gcp from '../images/skills/tools/gcp.png'
 
 import placements from '../images/resources/placements.jpg';
 import dsa from '../images/resources/dsa.png';
@@ -53,9 +56,10 @@ export const resumeData = {
             title: 'Software Engineer II',
             summary: 'Part of the Decisions Systems team to create Machine Learning platform for Data Scientists to launch, iterate and monitor the performance of their Machine Learning models.',
             description: [
-                "Built the model serving platform that powers the matchmaking service by ranking drivers based on 100 different features with a p95 latency of 250ms and handles 2-3 Lakh requests per day.",
-                "Worked on setting up the framework for Data Scientists to define features for offline and online queries using a python-based DSL. This brought down TAT of deploying ML models from 1.5 month to 2 weeks",
-                "Part of the squad to migrate the services at Porter from AWS to GCP which helped cut infra cost by 30%"
+                "Built, maintained, and deployed the model serving platform powering multiple ML models, serving 3–4 lakh inferences/day with a p95 latency of 200 ms.",
+                "Designed a Python-based DSL framework and CI/CD pipeline enabling Data Scientists to define offline and online features, reducing model deployment TAT from 1.5 months → 2 weeks.",
+                "Implemented a model inference logging pipeline ingesting 200 MB/s of logs for model re-training and debugging.",
+                "Built a reusable A/B testing Kotlin library for real-time order streams (40 RPS) enabling cross-service experiments with user-defined attributes; designed an adaptive balancing algorithm maintaining traffic splits within 0.1% error despite uneven data distributions."
             ]
         },
         {
@@ -64,11 +68,11 @@ export const resumeData = {
             location: 'Bengaluru, Karnataka',
             duration: 'July 2022 - June 2024',
             title: 'Software Engineer I',
-            summary: 'Worked on building the Payments micro-service from scratch',
+            summary: 'Worked on building the Payments micro-service from scratch and part of the AWS to GCP migration squad',
             description: [
-                "Built the payments microservice in Kotlin which currently processes 82% of all online transactions at the Porter with an uptime of 99.5%",
-                "Implemented dynamic switching between different Payment Gateways based on User Profile and region to improve payment success rate from 74% to 87%.",
-                "Built the model serving platform that powers the matchmaking service by ranking drivers based on 100 different features with a p95 latency of 250ms and handles 2-3 Lakh requests per day."
+                "Contributed to the migration of core services from AWS to GCP, reducing infrastructure costs by 30%.",
+                "Built the payments microservice from scratch, now processing 88% of all online transactions at Porter with 99.95% uptime.",
+                "Implemented dynamic routing between payment gateways based on user profile and region, improving payment success rate from 74% → 87%."
             ]
         },
         {
@@ -79,8 +83,8 @@ export const resumeData = {
             title: 'Software Engineer Intern',
             summary: 'Worked with the B2B facing team FinnAxia for building an end-to-end solution to classify their customer base.',
             description: [
-                "Developed a customer classification and visualization dashboard for banks to perform RFM analysis on their user-base and classify them into 5 relevant segments.",
-                "Wrote a Machine Learning model that used K-means clustering algorithm and trained on 1 lakh entries, served by a Spring-Boot based server to the ReactJS based frontend as a REST interface.",
+                "Developed a customer segmentation dashboard for banks to perform RFM analysis, classifying users into 5 segments using a custom K-Means clustering algorithm trained on 100 K records.",
+                "Indexed the classified data in Elasticsearch and built a Spring Boot REST API to serve it to a ReactJS-based frontend for interactive visualization. This helped the business unit understand more about their customer base and gain insights to take actions.",
                 "The dashboard built helped the business unit perform RFM (Recency, Frequency, Monetary) analysis on their user-base to gain further insights."
             ]
         },
@@ -102,7 +106,7 @@ export const resumeData = {
         {
             name: 'Karya',
             tech: 'Kotlin, Postgres, Redis, RabbitMQ',
-            description: 'An open-source distributed Task Scheduler designed for high-throughput job scheduling with support for periodic, delayed, and custom workflows. Integrates seamlessly into diverse tech stacks via YAML configuration, offering plug-and-play simplicity. Built for infinite scalability and robustness with a proven architecture. Multi-language client support ensures easy integration with any product.',
+            description: 'An open-source distributed task scheduler designed for high-throughput job scheduling with delayed, recurring and custom workflows. Built to scale horizontally, it supports multi-language clients, YAML configuration, plug-and-play integration, and enables chaining tasks, hooks and custom actions such as sending mails, Slack alerts, API calls, etc.',
             link: 'https://github.com/Saumya-Bhatt/karya'
         },
         {
@@ -110,6 +114,12 @@ export const resumeData = {
             tech: 'Kafka, Redis, Rabbit-MQ',
             description: 'End to end application to stream click events from a React-based webapp to a python consumer that triggers an email on suspicious activity in near-real-time (with a lag of 1 second) using Kafka.',
             link: 'https://github.com/Event-Streaming-Example'
+        },
+        {
+            name: 'NGINX inspired python webserver',
+            tech: 'Python',
+            description: 'A bare bone python web server created from scratch mirroring the event loop based async design of NGINX using sockets and kernel level calls to optimize for throughput',
+            link: 'https://github.com/Saumya-Bhatt/nginx-python'
         },
         {
             name: 'Movies-By-the-Sea',
@@ -185,6 +195,11 @@ export const resumeData = {
                     link: 'https://nodejs.org/en/'
                 },
                 {
+                    name: 'FastAPI',
+                    img: fastapi,
+                    link: "https://fastapi.tiangolo.com/"
+                },
+                {
                     name: 'Express JS',
                     img: express,
                     link: 'https://expressjs.com/'
@@ -245,9 +260,19 @@ export const resumeData = {
                     link: "https://aws.amazon.com/"
                 },
                 {
+                    name: "GCP",
+                    img: gcp,
+                    link: "https://console.cloud.google.com/"
+                },
+                {
                     name: "Docker",
                     img: docker,
                     link: "https://www.docker.com/"
+                },
+                {
+                    name: "Kubernetes",
+                    img: kubernetes,
+                    link: "https://kubernetes.io/"
                 },
                 {
                     name: "Kafka",
@@ -258,11 +283,6 @@ export const resumeData = {
                     name: 'Firebase',
                     img: firebase,
                     link: 'https://firebase.google.com/'
-                },
-                {
-                    name: 'Heroku',
-                    img: heroku,
-                    link: 'https://www.heroku.com/'
                 },
                 {
                     name: "Github",

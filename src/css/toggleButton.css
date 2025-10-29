@@ -1,14 +1,19 @@
 .toggle-switch {
-    background-color: #242424;
-    border: none;
+    background-color: #343434;
+    border: 2px solid #343434;
     margin-top: 20px;
     color: aliceblue;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 15px;
+    padding: 7px;
+    border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .toggle-switch:hover {
     cursor: pointer;
+    background-color: #444444;
+    transition: 200ms;
 }
 
 .toggle-description {

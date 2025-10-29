@@ -16,7 +16,7 @@ export default function ToggleButton(props) {
                 {isToggled ? (
                     "Hide Details"
                 ) : (
-                    "Read more details"
+                    "Read more"
                 )}
             </button>
             {
