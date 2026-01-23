@@ -32,6 +32,7 @@ import githubTool from '../images/skills/tools/github.png';
 import kafka from '../images/skills/tools/kafka.png';
 import kubernetes from '../images/skills/tools/kubernetes.png'
 import gcp from '../images/skills/tools/gcp.png'
+import spark from '../images/skills/tools/spark.png'
 
 import placements from '../images/resources/placements.jpg';
 import dsa from '../images/resources/dsa.png';
@@ -49,10 +50,21 @@ import medium from '../images/icons/medium.png'
 export const resumeData = {
     "experience": [
         {
+            company: 'Lyric',
+            link: 'https://lyric.tech/',
+            location: 'Remote',
+            duration: 'January 2026 - Present',
+            title: 'Software Engineer II',
+            summary: 'Building the ML Data Platform that helps serve Demand Forecasting Models in production for supply chain solutions',
+            description: [
+                "Maintaing central machine learning packages that are used to validate, train and serve Time Series Forecasting Models."
+            ]
+        },
+        {
             company: 'Porter (SE2)',
             link: 'https://porter.in/',
             location: 'Bengaluru, Karnataka',
-            duration: 'June 2024 - Present',
+            duration: 'June 2024 - January 2026',
             title: 'Software Engineer II',
             summary: 'Part of the Decisions Systems team to create Machine Learning platform for Data Scientists to launch, iterate and monitor the performance of their Machine Learning models.',
             description: [
@@ -103,6 +115,12 @@ export const resumeData = {
         }
     ],
     "projects": [
+        {
+            name: 'Wiki Search',
+            tech: 'Go, Streaming, Database',
+            description: 'Designed a stateful, memory-efficient indexing system to process multi-GB XML dumps. Implemented external merge-sort indexing and O(1) document retrieval using binary file offsets and concurrent tee-based ingestion.',
+            link: 'https://github.com/Saumya-Bhatt/wiki-search'
+        },
         {
             name: 'Karya',
             tech: 'Kotlin, Postgres, Redis, RabbitMQ',
@@ -244,11 +262,11 @@ export const resumeData = {
                     img: mysql,
                     link: 'https://www.mysql.com/'
                 },
-                {
-                    name: 'Elastic Search',
-                    img: elastic,
-                    link: 'https://www.elastic.co/elasticsearch/'
-                }
+                // {
+                //     name: 'Elastic Search',
+                //     img: elastic,
+                //     link: 'https://www.elastic.co/elasticsearch/'
+                // }
             ]
         },
         {
@@ -278,6 +296,11 @@ export const resumeData = {
                     name: "Kafka",
                     img: kafka,
                     link: "https://kafka.apache.org/"
+                },
+                {
+                    name: "Spark",
+                    img: spark,
+                    link: "https://spark.apache.org/"
                 },
                 {
                     name: 'Firebase',
